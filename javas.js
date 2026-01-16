@@ -3,7 +3,7 @@ function login() {
     const password = document.getElementById("password").value;
     const msg = document.getElementById("msg");
 
-    if (cuenta === "admin" && password === "1234") {
+    if (cuenta === "admin" && password === "23456") {
         window.location.href = "menu.html";
     } else {
         msg.textContent = "Cuenta o contraseña incorrecta";
@@ -14,3 +14,4 @@ function login() {
 function registrar() {
     alert("Función de registro pendiente");
 }
+
