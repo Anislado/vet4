@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Veterinaria | Menú Principal</title>
+    <link rel="stylesheet" href="menu.css">
+</head>
+<body>
+
+<div class="menu-container">
+    <h1>🐾 Veterinaria</h1>
+    <p>Seleccione una opción</p>
+
+    <div class="opciones">
+        <div class="card" onclick="ir('cirugia.html')">
+            🏥
+            <h2>Cirugías</h2>
+            <p>Registro quirúrgico</p>
+        </div>
+
+        <div class="card" onclick="ir('visitas.html')">
+            🩺
+            <h2>Visitas</h2>
+            <p>Consultas y revisiones</p>
+        </div>
+
+        <div class="card" onclick="ir('fararear.html')">
+            🐶
+            <h2>Fararear</h2>
+            <p>Control y registros</p>
+        </div>
+    </div>
+
+    <button onclick="logout()">Cerrar sesión</button>
+</div>
+
+<script>
+// Protección de sesión
+if (!localStorage.getItem("sesion")) {
+    window.location.href = "index.html";
+}
+
+function ir(pagina) {
+    window.location.href = pagina;
+}
+
+function logout() {
+    localStorage.removeItem("sesion");
+    window.location.href = "index.html";
+}
+</script>
+
+</body>
+</html>

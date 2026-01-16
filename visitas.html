@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Registro de Visitas</title>
+<link rel="stylesheet" href="menu.css">
+</head>
+<body>
+
+<div class="barra">
+    <button onclick="logout()">Cerrar sesión</button>
+    <button onclick="agregarFila()">➕ Agregar fila</button>
+    <button onclick="guardar()">💾 Guardar</button>
+</div>
+
+<table id="tabla">
+    <tr>
+        <th>Fecha</th>
+        <th class="num">No.</th>
+        <th>Paciente</th>
+        <th>Especie</th>
+        <th>Sexo</th>
+    </tr>
+</table>
+
+<script src="visitas.js"></script>
+</body>
+</html>

@@ -1,0 +1,219 @@
+/* =========================
+   RESET
+========================= */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* =========================
+   FONDO GENERAL
+========================= */
+body {
+    font-family: Calibri, Arial, sans-serif;
+    background: #e9fbf4;
+    min-height: 100vh;
+}
+
+/* =========================
+   LOGIN
+========================= */
+.login-container {
+    width: 360px;
+    margin: 120px auto;
+    background: white;
+    border-radius: 18px;
+    padding: 30px;
+    box-shadow: 0 18px 40px rgba(0,0,0,0.18);
+    text-align: center;
+}
+
+.logo {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.logo h1 {
+    color: #2e8b57;
+}
+
+.logo p {
+    color: #555;
+    font-size: 14px;
+}
+
+.login-container input {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border-radius: 10px;
+    border: 1px solid #bde5cf;
+    font-size: 14px;
+}
+
+.login-container button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 10px;
+    border: none;
+    font-size: 14px;
+    cursor: pointer;
+    background: #2e8b57;
+    color: white;
+}
+
+.login-container button:hover {
+    background: #256f46;
+}
+
+button.registro {
+    background: #4fae7b;
+}
+
+#msg {
+    margin-top: 10px;
+    font-size: 13px;
+}
+
+#msg.ok {
+    color: green;
+}
+
+#msg.error {
+    color: red;
+}
+
+/* =========================
+   MENÚ (IGUAL A TU CAPTURA)
+========================= */
+.menu-container {
+    width: 520px;
+    margin: 120px auto;
+    background: white;
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 18px 40px rgba(0,0,0,0.18);
+    text-align: center;
+}
+
+.menu-container h1 {
+    color: #2e8b57;
+    margin-bottom: 5px;
+}
+
+.menu-container p {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 25px;
+}
+
+.opciones {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.opcion {
+    flex: 1;
+    border: 2px solid #bde5cf;
+    border-radius: 14px;
+    padding: 20px 10px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    background: #f6fffb;
+}
+
+.opcion:hover {
+    background: #e6fff1;
+    transform: translateY(-4px);
+}
+
+.opcion h3 {
+    margin-top: 10px;
+    color: #2e8b57;
+}
+
+.opcion p {
+    font-size: 12px;
+    color: #555;
+}
+
+/* Botón cerrar sesión menú */
+.menu-container .salir {
+    margin-top: 25px;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    background: #c0392b;
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.menu-container .salir:hover {
+    background: #a93226;
+}
+
+/* =========================
+   TABLAS (CIRUGÍAS / VISITAS)
+========================= */
+.barra {
+    margin: 20px;
+    padding: 15px;
+    background: white;
+    border-radius: 14px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+.barra button {
+    padding: 6px 14px;
+    margin-right: 8px;
+    font-size: 14px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    background: #2e8b57;
+    color: white;
+}
+
+.barra button:first-child {
+    background: #c0392b;
+}
+
+table {
+    width: 95%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+th, td {
+    border: 1px solid #bde5cf;
+    padding: 8px;
+    text-align: center;
+    font-size: 14px;
+}
+
+th {
+    background: #e6fff1;
+    color: #2e8b57;
+}
+
+.num {
+    background: #f2fdf7;
+    width: 40px;
+    font-weight: bold;
+}
+
+td[contenteditable] {
+    background: #fffdf5;
+}
+
+td[contenteditable]:focus {
+    outline: 2px solid #2e8b57;
+}
